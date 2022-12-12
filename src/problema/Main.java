@@ -65,14 +65,36 @@ public class Main {
 		}
 		
 		
+		scanner.close();
 		
-		
-		
-		Persona persona= new Persona(edad, casapadres, true);
+		String tipoCuenta;
+		Persona persona= new Persona(edad, casapadres, estud);
+		tipoCuenta = encontrarCuenta(persona);
+		System.out.println("Podemos ofrecerte: " + tipoCuenta);
 	}
 	
-	public void encontrarCuenta(Persona persona) {
-		
+	public static String encontrarCuenta(Persona persona) {
+		String cuenta;
+		if(persona.getEdad()<18 && persona.isEstudiante() && persona.isCasaPadres()) {
+			cuenta="Cuenta Confort";
+			return cuenta;
+		}else if(persona.getEdad()< 25 && persona.isEstudiante() && !persona.isCasaPadres()) {
+			cuenta= "Cuenta Vamos que tú puedes";
+			return cuenta;
+		}else if(persona.getEdad()>18 && !persona.isEstudiante() && persona.isCasaPadres()) {
+			cuenta="Cuenta Saltando del Nido";
+			return cuenta;
+			
+		}else if(persona.getEdad() > 25 && !persona.isEstudiante() && persona.isCasaPadres()) {
+			cuenta="Cuenta Independizate que va siendo hora";
+			return cuenta;
+		}else if(persona.getEdad() > 25 && !persona.isEstudiante() && !persona.isCasaPadres()) {
+			cuenta="Cuenta Bienvenido a la Vida Adulta";
+			return cuenta;
+		}else {
+			cuenta = "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?";
+			return cuenta;
+		}
 	}
 
 }
