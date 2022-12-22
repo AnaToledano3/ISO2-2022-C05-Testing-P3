@@ -1,4 +1,4 @@
-
+package ISO2_C05.TestingP3;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ public class Main {
 		String opcion;
 		while(true){
 			try {
-				System.out.println("¿Vives con tus padres? Escribe 's' para si o 'n' para no");
+				System.out.println("ï¿½Vives con tus padres? Escribe 's' para si o 'n' para no");
 				opcion=scanner.next();
 				if (opcion.contains("s")) {
 					casapadres=true;
@@ -48,7 +48,7 @@ public class Main {
 		
 		while(true){
 			try {
-				System.out.println("¿Eres estudiante? Escribe 's' para si o 'n' para no");
+				System.out.println("ï¿½Eres estudiante? Escribe 's' para si o 'n' para no");
 				opcion=scanner.next();
 				if (opcion.contains("s")) {
 					estud=true;
@@ -81,7 +81,7 @@ public class Main {
 			cuenta="Cuenta Comfort";
 			return cuenta;
 		}else if(persona.getEdad()< 25 && persona.isEstudiante() && !persona.isCasaPadres()) {
-			cuenta= "Cuenta Vamos que tú puedes";
+			cuenta= "Cuenta Vamos que tï¿½ puedes";
 			return cuenta;
 		}else if(persona.getEdad()>18 && persona.getEdad()< 25 && !persona.isEstudiante() && persona.isCasaPadres()) {
 			cuenta="Cuenta Saltando del Nido";
@@ -93,7 +93,7 @@ public class Main {
 			cuenta="Cuenta Bienvenido a la Vida Adulta";
 			return cuenta;
 		}else {
-			cuenta = "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?";
+			cuenta = "No tenemos cuenta para ti, ï¿½estï¿½s seguro que has metido bien tus datos?";
 			return cuenta;
 		}
 	}
