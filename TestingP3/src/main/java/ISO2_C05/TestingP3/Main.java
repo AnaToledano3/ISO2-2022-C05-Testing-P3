@@ -1,9 +1,14 @@
 package ISO2_C05.TestingP3;
 
+
 import java.util.Scanner;
 
 public class Main {
-
+	/**
+	 * 
+	 * @param args
+	 */
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int edad = 0;
@@ -74,7 +79,11 @@ public class Main {
 		tipoCuenta = encontrarCuenta(persona);
 		System.out.println("Podemos ofrecerte: " + tipoCuenta);
 	}
-	
+	/**
+	 * 
+	 * @param persona
+	 * @return cuenta
+	 */
 	public static String encontrarCuenta(Persona persona) {
 		String cuenta;
 		if(persona.getEdad()<18 && persona.isEstudiante() && persona.isCasaPadres()) {
@@ -97,6 +106,12 @@ public class Main {
 			return cuenta;
 		}
 	}
+	/**
+	 * 
+	 * @param number
+	 * @throws NumeroNegativoException
+	 * @throws TooLargeNumberException
+	 */
 	public static void checkNumber(int number) throws NumeroNegativoException, TooLargeNumberException {
 	    if (number < 0) {
 	        throw new NumeroNegativoException("La edad debe ser mayor o igual a 0");
