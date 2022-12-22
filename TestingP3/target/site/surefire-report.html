@@ -92,10 +92,10 @@ function toggleDisplay(elementId) {
 <tr class="b">
 <td align="left">22</td>
 <td align="left">0</td>
+<td align="left">10</td>
 <td align="left">0</td>
-<td align="left">0</td>
-<td align="left">100%</td>
-<td align="left">0.02</td></tr></table><br />
+<td align="left">54.545%</td>
+<td align="left">0.035</td></tr></table><br />
 <p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></section><section>
 <h2><a name="Package_List"></a>Package List</h2><a name="Package_List"></a>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
@@ -112,10 +112,10 @@ function toggleDisplay(elementId) {
 <td align="left"><a href="#ISO2_C05.TestingP3">ISO2_C05.TestingP3</a></td>
 <td align="left">22</td>
 <td align="left">0</td>
+<td align="left">10</td>
 <td align="left">0</td>
-<td align="left">0</td>
-<td align="left">100%</td>
-<td align="left">0.02</td></tr></table><br />
+<td align="left">54.545%</td>
+<td align="left">0.035</td></tr></table><br />
 <p>Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.</p><section>
 <h3><a name="ISO2_C05.TestingP3"></a>ISO2_C05.TestingP3</h3><a name="ISO2_C05.TestingP3"></a>
 <table border="1" class="bodyTable">
@@ -129,26 +129,121 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
-<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest"><figure><img src="images/icon_warning_sml.gif" alt="" /></figure></a></td>
 <td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest">CuentaTest</a></td>
 <td align="left">22</td>
 <td align="left">0</td>
+<td align="left">10</td>
 <td align="left">0</td>
-<td align="left">0</td>
-<td align="left">100%</td>
-<td align="left">0.02</td></tr></table></section><br /></section><section>
+<td align="left">54.545%</td>
+<td align="left">0.035</td></tr></table></section><br /></section><section>
 <h2><a name="Test_Cases"></a>Test Cases</h2><a name="Test_Cases"></a>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><section>
 <h3><a name="CuentaTest"></a>CuentaTest</h3><a name="ISO2_C05.TestingP3.CuentaTest"></a>
 <table border="1" class="bodyTable">
 <tr class="a">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP1"></a>CDP1</td>
-<td align="left">0.018</td></tr>
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP1"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP1"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP1">CDP1</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP1');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP1-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP1-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.022</td></tr>
 <tr class="b">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP2"></a>CDP2</td>
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP1-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP1(CuentaTest.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)</pre></div></div></td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP2"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP2"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP2">CDP2</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP2');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP2-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP2-on"> - </span>[ Detail ]</a></div></td>
 <td align="left">0</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP2-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP2(CuentaTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr>
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP3"></a>CDP3</td>
@@ -164,23 +259,167 @@ function toggleDisplay(elementId) {
 <tr class="b">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP6"></a>CDP6</td>
-<td align="left">0</td></tr>
+<td align="left">0.002</td></tr>
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP7"></a>CDP7</td>
 <td align="left">0</td></tr>
 <tr class="b">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP8"></a>CDP8</td>
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP8"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP8"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP8">CDP8</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP8');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP8-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP8-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.001</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP8-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP8(CuentaTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP9"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP9"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP9">CDP9</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP9');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP9-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP9-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.002</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP9-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP9(CuentaTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP11"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP11"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP11">CDP11</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP11');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP11-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP11-on"> - </span>[ Detail ]</a></div></td>
 <td align="left">0</td></tr>
 <tr class="a">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP9"></a>CDP9</td>
-<td align="left">0</td></tr>
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
 <tr class="b">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP11"></a>CDP11</td>
-<td align="left">0</td></tr>
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP11-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP11(CuentaTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr>
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP12"></a>CDP12</td>
@@ -198,13 +437,108 @@ function toggleDisplay(elementId) {
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP15"></a>CDP15</td>
 <td align="left">0</td></tr>
 <tr class="a">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP16"></a>CDP16</td>
-<td align="left">0.001</td></tr>
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP16"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP16"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP16">CDP16</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP16');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP16-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP16-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.002</td></tr>
 <tr class="b">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP17"></a>CDP17</td>
-<td align="left">0</td></tr>
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP16-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP16(CuentaTest.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)</pre></div></div></td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP17"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP17"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP17">CDP17</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP17');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP17-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP17-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.002</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP17-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP17(CuentaTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr>
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP18"></a>CDP18</td>
@@ -214,21 +548,267 @@ function toggleDisplay(elementId) {
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP19"></a>CDP19</td>
 <td align="left">0</td></tr>
 <tr class="a">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP20"></a>CDP20</td>
-<td align="left">0</td></tr>
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP20"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP20"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP20">CDP20</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP20');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP20-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP20-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.002</td></tr>
 <tr class="b">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP21"></a>CDP21</td>
-<td align="left">0</td></tr>
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP20-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP20(CuentaTest.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)</pre></div></div></td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP21"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP21"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP21">CDP21</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP21');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP21-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP21-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.001</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP21-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP21(CuentaTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr>
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP22"></a>CDP22</td>
 <td align="left">0</td></tr>
 <tr class="b">
-<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP24"></a>CDP24</td>
-<td align="left">0.001</td></tr></table></section><br /></section>
+<td align="left"><a href="#ISO2_C05.TestingP3.CuentaTest.CDP24"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_ISO2_C05.TestingP3.CuentaTest.CDP24"></a><a href="#ISO2_C05.TestingP3.CuentaTest.CDP24">CDP24</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ISO2_C05.TestingP3.CuentaTest.CDP24');"><span style="display:inline;" id="ISO2_C05.TestingP3.CuentaTest.CDP24-off"> + </span><span style="display:none;" id="ISO2_C05.TestingP3.CuentaTest.CDP24-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.001</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="ISO2_C05.TestingP3.CuentaTest.CDP24-failure" style="display:none;">
+<div>
+<pre>org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ISO2_C05.TestingP3.CuentaTest.CDP24(CuentaTest.java:172)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></div></td>
+<td align="left"></td></tr></table></section><br /></section><section>
+<h2><a name="Failure_Details"></a>Failure Details</h2><a name="Failure_Details"></a>
+<p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
+<table border="1" class="bodyTable">
+<tr class="a">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP1"></a>CDP1</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="CDP1-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#13">ISO2_C05.TestingP3.CuentaTest:13</a></div></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP2"></a>CDP2</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="CDP2-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#20">ISO2_C05.TestingP3.CuentaTest:20</a></div></td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP8"></a>CDP8</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="CDP8-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#62">ISO2_C05.TestingP3.CuentaTest:62</a></div></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP9"></a>CDP9</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="CDP9-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#69">ISO2_C05.TestingP3.CuentaTest:69</a></div></td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP11"></a>CDP11</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="CDP11-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#82">ISO2_C05.TestingP3.CuentaTest:82</a></div></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP16"></a>CDP16</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="CDP16-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#117">ISO2_C05.TestingP3.CuentaTest:117</a></div></td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP17"></a>CDP17</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="CDP17-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#124">ISO2_C05.TestingP3.CuentaTest:124</a></div></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP20"></a>CDP20</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="CDP20-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#145">ISO2_C05.TestingP3.CuentaTest:145</a></div></td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP21"></a>CDP21</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="CDP21-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#152">ISO2_C05.TestingP3.CuentaTest:152</a></div></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ISO2_C05.TestingP3.CuentaTest.CDP24"></a>CDP24</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">org.junit.ComparisonFailure: expected:&lt;...emos cuenta para ti,[]&#xfffd;est&#xfffd;s seguro que ha...&gt; but was:&lt;...emos cuenta para ti,[ ]&#xfffd;est&#xfffd;s seguro que ha...&gt;</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="CDP24-failure"><a href="./xref-test/ISO2_C05/TestingP3/CuentaTest.html#172">ISO2_C05.TestingP3.CuentaTest:172</a></div></td></tr></table><br /></section>
       </div>
     </div>
     <div class="clear">
