@@ -7,49 +7,169 @@ import org.junit.Test;
 public class CuentaTest {
 
 	@Test
-	public void testEncontrarCuenta() {
-		int[] valoresEdad = {
-				-10000, -1, 0,1 ,17, 18, 19, 24,25,26,199,200,201,10000
-		};
-		boolean[] valoresCasa = {true, false};
+	public void CDP1() {
 		
-		boolean[] valoresEstudiante= { true, false};
-		
-		//agregar un test para valores null
-		
-	    for(int i=0; i<valoresEdad.length;i++) {
-	        for(int j=0;j<valoresCasa.length;j++) {
-	            for(int k=0; k<valoresEstudiante.length;k++) {
-	                String expectedResult = getExpectedResult(valoresEdad[i], valoresCasa[j], valoresEstudiante[k]);
-	                problema.Persona p = new problema.Persona(valoresEdad[i], valoresCasa[j], valoresEstudiante[k]);
-	                String actualResult = problema.Main.encontrarCuenta(p);
-	                assertEquals("Incorrect result for edad=" + valoresEdad[i] + ", casa=" + valoresCasa[j] + ", estudiante=" + valoresEstudiante[k], expectedResult, actualResult);
-	            }
-	        }
-	    }
+		Persona per= new Persona(20, false, false);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
 	}
-	private String getExpectedResult(int edad, boolean casa, boolean estudiante) {
-		if(edad<18 && estudiante && casa) {
-			
-			return "Cuenta Confort";
-		}else if(edad< 25 && estudiante && !casa) {
+	@Test
+	public void CDP2() {
 		
-			return "Cuenta Vamos que tú puedes";
-		}else if(edad>18 && edad< 25 && !estudiante && casa) {
-			
-			return "Cuenta Saltando del Nido";
-		}else if(edad > 25 && !estudiante && casa) {
-			
-			return "Cuenta Independizate que va siendo hora";
-		}else if(edad > 25 && !estudiante && !casa) {
-			
-			return "Cuenta Bienvenido a la Vida Adulta";
-		}else {
-			return "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?";
-			
-		}
+		Persona per= new Persona(16, false, false);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
 	}
-
-	
-
+	@Test
+	public void CDP3() {
+		
+		Persona per= new Persona(16, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Vamos que tú puedes");
+	   
+	}
+	@Test
+	public void CDP4() {
+		
+		Persona per= new Persona(16, true, true);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Comfort");
+	   
+	}
+	@Test
+	public void CDP5() {
+		
+		Persona per= new Persona(28, true, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Independizate que va siendo hora");
+	   
+	}
+	@Test
+	public void CDP6() {
+		
+		Persona per= new Persona(24, true, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Saltando del Nido");
+	   
+	}
+	@Test
+	public void CDP7() {
+		
+		Persona per= new Persona(24, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Vamos que tú puedes");
+	   
+	}
+	@Test
+	public void CDP8() {
+		
+		Persona per= new Persona(24, true, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP9() {
+		
+		Persona per= new Persona(29, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	public void CDP10() {
+		
+		Persona per= new Persona(19, true, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Saltando del Nido");
+	   
+	}
+	@Test
+	public void CDP11() {
+		
+		Persona per= new Persona(19, true, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP12() {
+		
+		Persona per= new Persona(19, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Vamos que tú puedes");
+	   
+	}
+	@Test
+	public void CDP13() {
+		
+		Persona per= new Persona(20, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Vamos que tú puedes");
+	   
+	}
+	@Test
+	public void CDP14() {
+		
+		Persona per= new Persona(29, false, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Bienvenido a la Vida Adulta");
+	   
+	}
+	@Test
+	public void CDP15() {
+		
+		Persona per= new Persona(29, true, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Independizate que va siendo hora");
+	   
+	}
+	@Test
+	public void CDP16() {
+		
+		Persona per= new Persona(29, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP17() {
+		
+		Persona per= new Persona(19, true, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP18() {
+		
+		Persona per= new Persona(29, false, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Bienvenido a la Vida Adulta");
+	   
+	}
+	@Test
+	public void CDP19() {
+		
+		Persona per= new Persona(20, true, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Saltando del Nido");
+	   
+	}
+	@Test
+	public void CDP20() {
+		
+		Persona per= new Persona(29, true, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP21() {
+		
+		Persona per= new Persona(20, false, false);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP22() {
+		
+		Persona per= new Persona(26, false, false);
+		assertEquals(Main.encontrarCuenta(persona), "Cuenta Bienvenido a la Vida Adulta");
+	   
+	}
+	public void CDP23() {
+		
+		Persona per= new Persona(26, false, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
+	@Test
+	public void CDP24() {
+		
+		Persona per= new Persona(26, true, true);
+		assertEquals(Main.encontrarCuenta(persona), "No tenemos cuenta para ti, ¿estás seguro que has metido bien tus datos?");
+	   
+	}
 }

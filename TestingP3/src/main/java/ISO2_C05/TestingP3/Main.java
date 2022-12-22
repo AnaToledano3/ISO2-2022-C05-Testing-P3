@@ -1,4 +1,4 @@
-package problema;
+
 
 import java.util.Scanner;
 
@@ -38,11 +38,11 @@ public class Main {
 					break;
 				}else {
 					System.out.println("Valor erroneo, vuelva a intentarlo");
-					scanner.next();
+					
 				}
 			}catch(Exception e) {
 				System.out.println("Valor erroneo, vuelva a intentarlo");
-				scanner.next();
+				
 			}
 		}
 		
@@ -58,11 +58,11 @@ public class Main {
 					break;
 				}else {
 					System.out.println("Valor erroneo, vuelva a intentarlo");
-					scanner.next();
+					
 				}
 			}catch(Exception e) {
 				System.out.println("Valor erroneo, vuelva a intentarlo");
-				scanner.next();
+				
 			}
 		}
 		
@@ -78,7 +78,7 @@ public class Main {
 	public static String encontrarCuenta(Persona persona) {
 		String cuenta;
 		if(persona.getEdad()<18 && persona.isEstudiante() && persona.isCasaPadres()) {
-			cuenta="Cuenta Confort";
+			cuenta="Cuenta Comfort";
 			return cuenta;
 		}else if(persona.getEdad()< 25 && persona.isEstudiante() && !persona.isCasaPadres()) {
 			cuenta= "Cuenta Vamos que tú puedes";

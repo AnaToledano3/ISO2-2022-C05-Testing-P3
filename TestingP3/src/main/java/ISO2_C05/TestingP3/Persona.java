@@ -1,4 +1,4 @@
-package problema;
+
 
 public class Persona {
 	 
