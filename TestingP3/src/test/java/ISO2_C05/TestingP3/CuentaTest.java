@@ -134,7 +134,7 @@ public class CuentaTest {
 	@Test
 	public void CDP19() {
 		
-		Persona per= new Persona(20, true, false);
+		Persona per= new Persona(29, true, false);
 		assertEquals(Main.encontrarCuenta(persona), "Cuenta Saltando del Nido");
 	   
 	}
