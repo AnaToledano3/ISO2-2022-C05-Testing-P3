@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-<modelVersion>4.0.0</modelVersion>
-<groupId>ISO2_C05</groupId>
-<artifactId>TestingP3</artifactId>
-<packaging>war</packaging>
-<version>0.0.1-SNAPSHOT</version>
- <name>TestingP3</name>
-  <!-- FIXME change it to the project's website -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ISO2_C05</groupId>
+  <artifactId>TestingP3</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>TestingP3</name>
+<!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
@@ -68,7 +69,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	</dependencies>
 
 	<build>
-		<finalName>Testing-P1</finalName>
+		<finalName>Testing-P3</finalName>
 		
   <plugins>
     <plugin>
@@ -178,7 +179,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 				</reportSets>
 			</plugin>
 
-			<!-- commented for lab session concerning maintenance 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
@@ -208,8 +208,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
 				</plugin>		
--->
 		</plugins>
 	</reporting>
+
+
+
 
 </project>
