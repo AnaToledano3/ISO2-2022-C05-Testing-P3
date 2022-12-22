@@ -8,7 +8,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		int edad = 0;
 		boolean estud,casapadres;
-		Scanner scanner= new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in, "UTF-8");
 		int x=1;
 		for(int i=0;i<x;i++){
 			try {
